@@ -3,5 +3,6 @@ public class klas {
         System.out.println("sd");
         System.out.println("sd");
         System.out.println("sd");
+        System.out.println("sd");
     }
 }
