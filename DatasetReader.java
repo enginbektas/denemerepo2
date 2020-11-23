@@ -17,10 +17,11 @@ public class DatasetReader {
             long id = (long) jsonObject.get("dataset id");
             String datasetName = (String) jsonObject.get("dataset name");
             long maxNumOfLabelsPerInstance = (long) jsonObject.get("maximum number of labels per instance");
-
+            //Taking array from Json file
             JSONArray jsonArray = (JSONArray) jsonObject.get("class labels");
 
-
+            // This for loop's purpose is getting elements of array by one by one and storing
+            // those elements in ...?
             for (int i=0; i<jsonArray.size(); i++) {
                 JSONObject obj2 = (JSONObject) jsonArray.get(i);
                 long labelId = (long) obj2.get("label id");
