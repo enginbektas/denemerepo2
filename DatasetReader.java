@@ -13,6 +13,7 @@ public class DatasetReader {
         //fdgfgg
         try {
 
+            // Directory path should be inside project file.
             Object obj = parser.parse(new FileReader("C:\\Users\\engin\\Desktop\\CES3063F20_LabelingProject_Input-1.json"));
             JSONObject jsonObject = (JSONObject) obj;
             long id = (long) jsonObject.get("dataset id");
